@@ -1,0 +1,136 @@
+/* ====== Reset ====== */
+body {
+  margin: 0;
+}
+
+/* ====== Container Principal ====== */
+.login-container {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ====== Coluna Esquerda ====== */
+.left-login {
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.left-login > h1 {
+  font-size: 3vw;
+  color: azure;
+}
+
+.left-login-image {
+  width: 35vw;
+}
+
+/* ====== Coluna Direita / Card ====== */
+.right-login {
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-login {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px 35px;
+  background: #000;
+  border-radius: 20px;
+  box-shadow: 0px 10px 40px #a3a3a3;
+}
+
+.card-login > h1 {
+  color: azure;
+  font-weight: 800;
+  margin: 0;
+}
+
+/* ====== Campos de Texto ====== */
+.textfield {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 10px;
+  width: 100%;
+}
+
+.textfield > label {
+  color: azure;
+  margin-bottom: 10px;
+}
+
+.textfield > input {
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  background: #4a0101;
+  color: azure;
+  font-size: 14pt;
+  line-height: 1.4;
+  box-shadow: 0px 7px 13px #460707;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.textfield > input::placeholder {
+  color: azure;
+}
+
+/* ====== Botão Login ====== */
+.btnLogar {
+  width: 100%;
+  padding: 16px 0px;
+  margin: 25px 0;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 3px;
+  color: azure;
+  background: #460707;
+  cursor: pointer;
+  box-shadow: 0px 10px 40px -12px #4a0101;
+  transition: background 0.3s ease;
+}
+
+.btnLogar:hover {
+  background: #750000;
+}
+
+/* ====== Responsivo ====== */
+@media only screen and (max-width: 950px) {
+  .card-login {
+    width: 85%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .login-container {
+    flex-direction: column;
+  }
+
+  .left-login {
+    display: none;
+  }
+
+  .right-login {
+    width: 100vw;
+  }
+}
