@@ -3,6 +3,10 @@ body {
   margin: 0;
 }
 
+body * {
+  box-sizing: border-box;
+}
+
 /* ====== Container Principal ====== */
 .login-container {
   width: 100vw;
@@ -135,10 +139,23 @@ form {
   }
 
   .left-login {
-    display: none;
+    width: 80vw;
+  }
+
+  .left-login > h1{
+    font-size: x-large;
   }
 
   .right-login {
     width: 100vw;
+  }
+  
+  .left-login-image{
+    width: 50vw;
+  }
+
+  .card-login{
+    width: 90%;
+
   }
 }
