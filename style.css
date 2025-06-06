@@ -118,12 +118,14 @@ form {
   color: azure;
   background: #460707;
   cursor: pointer;
-  box-shadow: 0px 10px 40px -12px #4a0101;
-  transition: background 0.3s ease;
+  
+  transition: 0.3s ease-in-out;
 }
 
 .btnLogar:hover {
   background: #750000;
+  box-shadow: 2px 2px 20px rgba(255, 0, 0, 0.712);
+  transition: 0.3s ease-in-out;
 }
 
 /* ====== Responsivo ====== */
